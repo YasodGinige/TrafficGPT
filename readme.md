@@ -1,7 +1,7 @@
 ## TrafficGPT: An LLM Approach for Open-Set Encrypted Traffic Classification
 
 ![](https://img.shields.io/badge/license-MIT-000000.svg)
-[![arXiv](https://img.shields.io/badge/arXiv-1909.05658-<color>.svg)](https://arxiv.org/abs/2202.06335)
+[![arXiv](https://img.shields.io/badge/arXiv-1909.05658-<color>.svg)]()
 
 **Note:**
 - ⭐ **Please leave a <font color='orange'>STAR</font> if you like this project!** ⭐
