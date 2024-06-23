@@ -1,0 +1,18 @@
+########K-LND1#########
+Test accuracy Normal model_Closed_set :0.9015277777777778
+Test accuracy Normal model_Open_set :0.7838070860837936
+Average Micro F1_Score: 0.5977530114991807
+Average Macro F1_Score: 0.8618349898252129
+
+########K-LND2#########
+Test accuracy Normal model_Closed_set :0.9969444444444444
+Test accuracy Normal model_Open_set :0.7981139700929544
+Average Micro F1_Score: 0.6558245730180033
+Average Macro F1_Score: 0.9236634572590509
+
+########K-LND3#########
+Test accuracy Normal model_Closed_set :0.9966666666666667
+Test accuracy Normal model_Open_set :0.7879563518792941
+Average Micro F1_Score: 0.6446570499290546
+Average Macro F1_Score: 0.9095551312029341
+
