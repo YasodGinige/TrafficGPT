@@ -7,7 +7,9 @@
 - ⭐ **Please leave a <font color='orange'>STAR</font> if you like this project!** ⭐
 - If you find any <font color='red'>incorrect</font> / <font color='red'>inappropriate</font> / <font color='red'>outdated</font> content, please kindly consider opening an issue or a PR.
 
-![Overview](https://github.com/[YasodGinige]/[TrafficGPT]/blob/[main]/CVA.png?raw=true)
+<div align="center">
+    <img src="/CVA.png" width="850" height="450" alt="overall architecure"/>
+</div>
 
 In this repository, we guide you in setting up the TrafficGPT project in a local environment and reproducing the results. TrafficGPT, a novel traffic analysis attack that leverages GPT-2, a popular LLM, to enhance feature extraction, thereby improving
 the open-set performance of downstream classification. We use five existing encrypted traffic datasets to show how the feature extraction by GPT-2 improves the open-set performance of traffic
