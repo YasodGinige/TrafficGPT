@@ -13,6 +13,9 @@ def preprocess(args):
     data_path = args.data_path
     dataset = args.dataset
 
+    if not os.path.exists("./temp_dir"):  
+        os.makedirs("temp_dir") 
+
     Data_preprocessor = Data_Preprocess()
     Data_preprocessor.preprocess_dataset(data_path, dataset)
 
