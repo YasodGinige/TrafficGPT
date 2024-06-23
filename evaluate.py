@@ -356,41 +356,6 @@ def Micro_F1(Matrix, NB_CLASSES):
 
     return Micro_F1
 
-
-def New_F1_Score(Matrix, NB_CLASSES):
-    Column_sum = np.sum(Matrix, axis=0)
-    Raw_sum = np.sum(Matrix, axis=1)
-
-    Precision_Differences = []
-    Recall_Differences = []
-    for i in range(NB_CLASSES):
-        Precision_Differences.append(np.abs(2 * Matrix[i][i] - Column_sum[i]))
-        Recall_Differences.append(np.abs(2 * Matrix[i][i] - Raw_sum[i]))
-
-    Precision_Differences = np.array(Precision_Differences)
-    Precision_Differences_Per = Precision_Differences / np.sum(Precision_Differences)
-    Recall_Differences = np.array(Recall_Differences)
-    Recall_Differences_Per = Recall_Differences / np.sum(Recall_Differences)
-
-    Precisions = np.zeros(NB_CLASSES)
-    Recalls = np.zeros(NB_CLASSES)
-
-    epsilon = 1e-8
-    for k in range(len(Precisions)):
-        Precisions[k] = (Matrix[k][k] / np.sum(Matrix, axis=0)[k])
-    Precision = np.sum(np.array(Precisions) * Precision_Differences_Per)
-
-    for k in range(len(Recalls)):
-        Recalls[k] = (Matrix[k][k] / np.sum(Matrix, axis=1)[k])  # *Recall_Differences_Per[k]
-    Recall = np.sum(np.array(Recalls) * Recall_Differences_Per)
-
-    print("Precision:", Precision)
-    print("Recall:", Recall)
-
-    F1_Score = 2 * Precision * Recall / (Precision + Recall + epsilon)
-    return F1_Score
-
-
 def Macro_F1(Matrix, NB_CLASSES):
     Precisions = np.zeros(NB_CLASSES)
     Recalls = np.zeros(NB_CLASSES)
