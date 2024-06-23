@@ -102,6 +102,9 @@ def main(args):
     num_labels = args.num_labels
     dataset = args.dataset
 
+    if not os.path.exists("./trained_models"):  
+        os.makedirs("trained_models") 
+
     train_dataset = pd.read_csv('./temp_dir/train.csv')
     val_dataset = pd.read_csv('./temp_dir/valid.csv')
 
