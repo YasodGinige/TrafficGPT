@@ -28,7 +28,7 @@ First, clone the git repo and install the requirements.
 ```
 git clone https://github.com/YasodGinige/TrafficGPT.git
 cd TrafficGPT
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 Next, download the dataset and place it in the data directory.
 ```
