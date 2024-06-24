@@ -32,9 +32,7 @@ pip install requirements.txt
 ```
 Next, download the dataset and place it in the data directory.
 ```
-mkdir data
-cd data
-wget https://drive.google.com/file/d/1-MVfxyHdQeUguBmYrIIw1jhMVSqxXQgO/view?usp=sharing
+gdown https://drive.google.com/uc?id=1-MVfxyHdQeUguBmYrIIw1jhMVSqxXQgO
 unzip data.zip 
 ```
 
