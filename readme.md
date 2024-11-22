@@ -5,7 +5,7 @@
 
 **Note:**
 - ⭐ **Please leave a <font color='orange'>STAR</font> if you like this project!** ⭐
-- If you are using this work for academic work, please cite our [paper](https://dl.acm.org/doi/abs/10.1145/3674213.3674217).
+- If you are using this work for academic purposes, please cite our [paper](https://dl.acm.org/doi/abs/10.1145/3674213.3674217).
 - If you find any <font color='red'>incorrect</font> / <font color='red'>inappropriate</font> / <font color='red'>outdated</font> content, please kindly consider opening an issue or a PR.
 
 <div align="center">
