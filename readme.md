@@ -59,7 +59,7 @@ python3 evaluate.py --max_len 1024 --batch_size 12 --epochs 5 --num_labels 75 --
 ```
 
 # Citations
-If you are using this work for academic work, please cite our [paper](https://dl.acm.org/doi/abs/10.1145/3674213.3674217).
+If you are using this work for academic purposes, please cite our [paper](https://dl.acm.org/doi/abs/10.1145/3674213.3674217).
 ```
 @inproceedings{ginige2024trafficgpt,
   title={TrafficGPT: An LLM Approach for Open-Set Encrypted Traffic Classification},
