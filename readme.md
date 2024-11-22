@@ -5,6 +5,7 @@
 
 **Note:**
 - ⭐ **Please leave a <font color='orange'>STAR</font> if you like this project!** ⭐
+- If you are using this work for academic work, please cite our [paper](https://dl.acm.org/doi/abs/10.1145/3674213.3674217).
 - If you find any <font color='red'>incorrect</font> / <font color='red'>inappropriate</font> / <font color='red'>outdated</font> content, please kindly consider opening an issue or a PR.
 
 <div align="center">
@@ -48,7 +49,6 @@ python3 train.py --max_len 1024 --batch_size 12 --epochs 3 --num_labels 4  --dat
 python3 train.py --max_len 1024 --batch_size 12 --epochs 3 --num_labels 12  --dataset USTC
 python3 train.py --max_len 1024 --batch_size 12 --epochs 3 --num_labels 75  --dataset CSTNet
 ```
-
 To evaluate, run the suitable code for the dataset:
 ```
 python3 evaluate.py --max_len 1024 --batch_size 12 --epochs 3 --num_labels 60 --K_number 30 --TH_value 0.8 --dataset DF
@@ -56,4 +56,16 @@ python3 evaluate.py --max_len 1024 --batch_size 12 --epochs 3 --num_labels 200 -
 python3 evaluate.py --max_len 1024 --batch_size 12 --epochs 3 --num_labels 4 --K_number 4 --TH_value 0.9 --dataset DC
 python3 evaluate.py --max_len 1024 --batch_size 12 --epochs 3 --num_labels 12 --K_number 5 --TH_value 0.8 --dataset USTC
 python3 evaluate.py --max_len 1024 --batch_size 12 --epochs 5 --num_labels 75 --K_number 20 --TH_value 0.8 --dataset CSTNe
+```
+
+# Citations
+If you are using this work for academic work, please cite our [paper](https://dl.acm.org/doi/abs/10.1145/3674213.3674217).
+```
+@inproceedings{ginige2024trafficgpt,
+  title={TrafficGPT: An LLM Approach for Open-Set Encrypted Traffic Classification},
+  author={Ginige, Yasod and Dahanayaka, Thilini and Seneviratne, Suranga},
+  booktitle={Proceedings of the Asian Internet Engineering Conference 2024},
+  pages={26--35},
+  year={2024}
+}
 ```
