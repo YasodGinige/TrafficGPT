@@ -357,24 +357,22 @@ def Micro_F1(Matrix, NB_CLASSES):
     return Micro_F1
 
 def Macro_F1(Matrix, NB_CLASSES):
-    Precisions = np.zeros(NB_CLASSES)
-    Recalls = np.zeros(NB_CLASSES)
-
     epsilon = 1e-8
+    F1s = np.zeros(NB_CLASSES)
 
-    for k in range(len(Precisions)):
-        Precisions[k] = Matrix[k][k] / np.sum(Matrix, axis=0)[k]
-    
-    Precision = np.average(Precisions)
-    for k in range(len(Recalls)):
-        Recalls[k] = Matrix[k][k] / np.sum(Matrix, axis=1)[k]
+    for k in range(NB_CLASSES):
+        TP = Matrix[k][k]
+        FP = np.sum(Matrix[:, k]) - TP
+        FN = np.sum(Matrix[k, :]) - TP
 
-    Recall = np.average(Recalls)
-    print("Macro Prec:", Precision)
-    print("Macro Rec:", Recall)
+        precision = TP / (TP + FP + epsilon)
+        recall = TP / (TP + FN + epsilon)
+        F1s[k] = 2 * precision * recall / (precision + recall + epsilon)
 
-    F1_Score = 2 * Precision * Recall / (Precision + Recall + epsilon)
-    return F1_Score
+    macro_F1 = np.mean(F1s)
+    print("Per-class F1s:", F1s)
+    print("Macro F1:", macro_F1)
+    return macro_F1
 
 
 def main(args):
