@@ -3,6 +3,11 @@
 ![](https://img.shields.io/badge/license-MIT-000000.svg)
 [![arXiv](https://img.shields.io/badge/arXiv-1909.05658-<color>.svg)]()
 
+**Update**
+- We have extended our work, including LLaMA models, in the framework and experiments to analyze the performance gain.
+- The new paper, which is accepted to the Elsevier Computer Networks journal, can be found [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5074974).
+- The code can be found [here](https://github.com/YasodGinige/TrafficLLM).
+
 **Note:**
 - ⭐ **Please leave a <font color='orange'>STAR</font> if you like this project!** ⭐
 - If you are using this work for academic purposes, please cite our [paper](https://dl.acm.org/doi/abs/10.1145/3674213.3674217).
