@@ -6,7 +6,7 @@
 **Update**
 - We have extended our work, including LLaMA models, in the framework and experiments to analyze the performance gain.
 - The new paper, which is accepted to the Elsevier Computer Networks journal, can be found [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5074974).
-- The code can be found [here](https://github.com/YasodGinige/TrafficLLM).
+- The extended code can be found [here](https://github.com/YasodGinige/TrafficLLM).
 
 **Note:**
 - ⭐ **Please leave a <font color='orange'>STAR</font> if you like this project!** ⭐
